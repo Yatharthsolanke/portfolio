@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yatharth Solanke | Developer</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #111;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #007BFF;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #007BFF;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.5rem;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Skills Section */
+    .skills {
+      padding: 3rem 2rem;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .skill-category h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #007BFF;
+    }
+
+    .skill-category ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skill-category li {
+      background-color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 0.4rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Resume Section */
+    .resume {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .resume-preview {
+      margin-top: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .project-card {
+      background-color: white;
+      margin: 1.5rem auto;
+      padding: 1.5rem;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .project-card ul {
+      list-style: disc inside;
+      padding-left: 1rem;
+      margin-top: 1rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 3rem 2rem;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Yatharth Solanke</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="hero-content">
+      <img src="C:\portfolio-website\images\My Picture peg.jpg" alt="Profile Picture" class="profile-pic">
+      <h1>Hello, I'm Yatharth Solanke</h1>
+      <p>Java Developer | Backend Engineer | Cloud Enthusiast</p>
+      <p>I build scalable backend systems using Java, Spring Boot, React.js, and AWS.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Languages</h3>
+        <ul>
+          <li>Java</li>
+          <li>JavaScript (ES6+)</li>
+          <li>SQL</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Frameworks & Libraries</h3>
+        <ul>
+          <li>Spring Boot</li>
+          <li>React.js</li>
+          <li>Bootstrap</li>
+          <li>Axios</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Databases</h3>
+        <ul>
+          <li>MySQL</li>
+          <li>MS SQL Server</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>Git / GitHub</li>
+          <li>Postman</li>
+          <li>Maven / Gradle</li>
+          <li>Visual Studio Code</li>
+          <li>Eclipse / IntelliJ IDEA</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Other Skills</h3>
+        <ul>
+          <li>RESTful API Development</li>
+          <li>Microservices Architecture</li>
+          <li>Problem Solving</li>
+          <li>Debugging & Testing</li>
+          <li>Cloud Computing (AWS Basics)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Startup Collaboration And Innovation Platform</h3>
+      <p><strong>Description:</strong> Developed a full-stack collaboration and innovation platform designed to streamline startup team operations, enhance productivity, and improve communication among team members.</p>
+
+      <ul>
+        <li><strong>Purpose:</strong> The platform was built to help early-stage startups manage tasks, share ideas, and collaborate efficiently in real time.</li>
+        <li><strong>Backend:</strong> Built with Spring Boot, implementing RESTful APIs for data exchange between frontend and backend.</li>
+        <li><strong>Frontend:</strong> Created a responsive UI using React.js, ensuring compatibility across devices and providing a seamless user experience.</li>
+        <li><strong>Database:</strong> Used MySQL and MS SQL Server for storing user data, projects, tasks, and messages securely.</li>
+        <li><strong>Authentication:</strong> Implemented secure login and role-based access control to ensure only authorized users could access specific features.</li>
+        <li><strong>API Integration:</strong> Designed and consumed REST APIs for real-time updates and CRUD operations like adding tasks or updating status.</li>
+        <li><strong>Tools & Technologies:</strong> Postman for API testing, Git & GitHub for version control, Maven/Gradle for dependency management.</li>
+        <li><strong>Testing:</strong> Conducted unit and integration testing to ensure system reliability and performance.</li>
+        <li><strong>UI/UX:</strong> Integrated basic HTML/CSS/JavaScript for improved interactivity and layout consistency.</li>
+        <li><strong>Scalability:</strong> Structured the application to support future expansion, including microservices architecture readiness.</li>
+        <li><strong>Outcome:</strong> Delivered a scalable and efficient platform that enables startup teams to collaborate, share ideas, and manage tasks in real time.</li>
+        <li><strong>Performance:</strong> Optimized database queries and API response times for faster loading and better UX.</li>
+        <li><strong>Team Role:</strong> Played a key role in both frontend and backend development, working closely with teammates on task planning and code reviews.</li>
+        <li><strong>Challenges:</strong> Solved issues related to state management, API security, and cross-browser compatibility during development.</li>
+        <li><strong>Future Scope:</strong> Potential integration with cloud services like AWS for scalability and high availability.</li>
+      </ul>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Online Examination System</h3>
+      <p><strong>Description:</strong> A full-stack online examination system that allows students to take exams remotely with secure authentication and real-time monitoring features.</p>
+
+      <ul>
+        <li><strong>Purpose:</strong> To provide an automated, secure, and scalable solution for conducting online tests and managing student results.</li>
+        <li><strong>Backend:</strong> Developed using Java and Spring Boot to handle question papers, user responses, and result generation.</li>
+        <li><strong>Frontend:</strong> Built with React.js for a dynamic and interactive exam-taking experience, including timer and navigation features.</li>
+        <li><strong>Database:</strong> Utilized MySQL to store student details, exam patterns, questions, answers, and scores.</li>
+        <li><strong>User Roles:</strong> Implemented role-based access — admin, teacher, and student — each with distinct privileges.</li>
+        <li><strong>Exam Flow:</strong> Allowed admins to create and schedule exams, teachers to upload questions, and students to attempt exams online.</li>
+        <li><strong>Security:</strong> Ensured secure login and session handling to prevent unauthorized access during exams.</li>
+        <li><strong>Real-Time Features:</strong> Enabled real-time countdown and auto-submit functionality when the exam ends.</li>
+        <li><strong>Result Handling:</strong> Automated score calculation and instant result display after submission.</li>
+        <li><strong>Technologies:</strong> Spring Boot, React.js, MySQL, HTML/CSS/JavaScript, Git & GitHub, Postman.</li>
+        <li><strong>APIs:</strong> RESTful APIs were used to fetch questions, submit answers, and retrieve results dynamically.</li>
+        <li><strong>Validation:</strong> Added input validation and error handling to prevent incorrect or malicious submissions.</li>
+        <li><strong>Deployment:</strong> Designed for easy deployment on local servers or cloud platforms like AWS or Heroku.</li>
+        <li><strong>Testing:</strong> Performed thorough testing to ensure accuracy in result calculation and proper handling of edge cases.</li>
+        <li><strong>Outcome:</strong> Successfully created a robust and reliable system that can be used by educational institutions for remote assessments.</li>
+      </ul>
+    </div>
+  </section>
+<!-- Resume Section -->
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <p>You can view or download my resume below:</p>
+
+    <!-- Download Button -->
+    <a href="file:///C:/Users/y3571/Downloads/YatharthSolankeSoftware_Developer.pdf" class="btn" download>Download Resume (PDF)</a>
+
+    <!-- Optional: Embed Resume Preview 
+    <div class="resume-preview">
+      <iframe src="file:///C:/Users/y3571/Downloads/YatharthSolankeSoftware_Developer.pdf"
+              style="width:100%; height:600px;"
+              frameborder="0">
+        This browser does not support PDFs. Please download the PDF to view it:
+        <a href="file:///C:/Users/y3571/Downloads/YatharthSolankeSoftware_Developer.pdf">Download Resume</a>
+      </iframe>
+    </div>
+  </section>-->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:yatharthdsolanke22@gmail.com">yatharthdsolanke22@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917066422985">+91 7066422985</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yatharth-solanke-463881218/ " target="_blank">linkedin.com/in/yatharth-solanke</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Yatharth Solanke. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for smooth scroll -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
